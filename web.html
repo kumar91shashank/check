@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Web Page</title>
+  <script>
+    // JavaScript code
+    function greet() {
+      var name = document.getElementById('name').value;
+      var greeting = document.getElementById('greeting');
+      
+      if (name.trim() === '') {
+        greeting.textContent = 'Please enter your name.';
+      } else {
+        greeting.textContent = 'Hello, ' + name + '!';
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome to My Web Page</h1>
+  
+  <label for="name">Enter your name:</label>
+  <input type="text" id="name">
+  <button onclick="greet()">Say Hello</button>
+  
+  <p id="greeting"></p>
+</body>
+</html>
+
